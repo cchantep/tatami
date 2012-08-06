@@ -9,5 +9,5 @@ Scala/Java artifact repository.
 Add following resolver definition to be able use this repository with SBT:
 
 ```scala
-https://raw.github.com/cchantep/tatami/master/
+https://raw.github.com/cchantep/tatami/develop/
 ```
