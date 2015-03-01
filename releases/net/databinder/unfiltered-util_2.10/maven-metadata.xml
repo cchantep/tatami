@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.databinder</groupId>
+  <artifactId>unfiltered-util_2.10</artifactId>
+  <versioning>
+    <release>0.7.0-applicius</release>
+    <versions>
+      <version>0.7.0-applicius</version>
+    </versions>
+    <lastUpdated>20130930125546</lastUpdated>
+  </versioning>
+</metadata>
