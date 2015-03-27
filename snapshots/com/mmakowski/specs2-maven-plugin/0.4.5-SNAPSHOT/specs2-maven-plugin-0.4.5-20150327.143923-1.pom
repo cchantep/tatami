@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- for easy deployment to Maven Central -->
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<groupId>com.mmakowski</groupId>
+	<artifactId>specs2-maven-plugin</artifactId>
+	<packaging>maven-plugin</packaging>
+	<version>0.4.5-SNAPSHOT</version>
+	<name>specs2 Maven plugin</name>
+	<description>A Maven plugin that executes specs2 specifications</description>
+	<url>https://github.com/mmakowski/maven-specs2-plugin</url>
+
+	<licenses>
+		<license>
+			<name>BSD</name>
+			<url>http://www.opensource.org/licenses/bsd-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git://github.com/mmakowski/maven-specs2-plugin.git</connection>
+		<url>https://github.com/mmakowski/maven-specs2-plugin</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>mmakowski</id>
+			<name>Maciek Makowski</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<maven.version>2.2.1</maven.version>
+		<scala.version>2.11</scala.version>
+		<scala.lib.version>2.11.5</scala.lib.version>
+		<scala-io.version>0.4.3-1</scala-io.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>net.alchim31.maven</groupId>
+				<artifactId>scala-maven-plugin</artifactId>
+				<configuration>
+					<recompileMode>all</recompileMode>	<!-- NOTE: "incremental" compilation although faster may require passing to MAVEN_OPTS="-XX:MaxPermSize=128m" -->
+					<useZincServer>true</useZincServer>	<!-- NOTE: if you have Zinc server installed and running compilation will be offloaded which can speed things up -->
+				</configuration>
+				<executions>
+					<execution>
+						<id>scala-compile-first</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>add-source</goal>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>scala-test-compile</id>
+						<phase>process-test-resources</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<includes>
+						<include>**/*</include>
+					</includes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-artifact</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>${maven.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>${scala.lib.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.scala-incubator.io</groupId>
+			<artifactId>scala-io-core_${scala.version}</artifactId>
+			<version>${scala-io.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.scala-incubator.io</groupId>
+			<artifactId>scala-io-file_${scala.version}</artifactId>
+			<version>${scala-io.version}</version>
+		</dependency>
+		<!-- for specs2 to generate HTML reports -->
+		<dependency>
+			<groupId>org.pegdown</groupId>
+			<artifactId>pegdown</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<!-- specifies interface of objects that need to be passed to specs2 TestFrameworkRunner -->
+		<dependency>
+			<groupId>org.scala-tools.testing</groupId>
+			<artifactId>test-interface</artifactId>
+			<version>0.5</version>
+		</dependency>
+		<!-- for specs2 to generate JUnit XML -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+</project>
