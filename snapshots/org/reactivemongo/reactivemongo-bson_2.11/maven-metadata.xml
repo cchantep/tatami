@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.reactivemongo</groupId>
+  <artifactId>reactivemongo-bson_2.11</artifactId>
+  <versioning>
+    <versions>
+      <version>0.11.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20150408194100</lastUpdated>
+  </versioning>
+</metadata>
