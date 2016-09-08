@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.typesafe.akka</groupId>
+  <artifactId>akka-stream-contrib_2.11</artifactId>
+  <versioning>
+    <release>0.3-9-gaeac7b2</release>
+    <versions>
+      <version>0.3-9-gaeac7b2</version>
+    </versions>
+    <lastUpdated>20160908214113</lastUpdated>
+  </versioning>
+</metadata>
