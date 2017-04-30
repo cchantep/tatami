@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.julienrf</groupId>
+  <artifactId>reactivemongo-derived-codecs_2.11</artifactId>
+  <versioning>
+    <versions>
+      <version>2.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170430125040</lastUpdated>
+  </versioning>
+</metadata>
