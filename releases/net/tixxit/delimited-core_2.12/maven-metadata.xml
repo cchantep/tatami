@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.tixxit</groupId>
+  <artifactId>delimited-core_2.12</artifactId>
+  <versioning>
+    <release>0.9.0-ITM</release>
+    <versions>
+      <version>0.9.0-ITM</version>
+    </versions>
+    <lastUpdated>20171027153307</lastUpdated>
+  </versioning>
+</metadata>
