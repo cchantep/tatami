@@ -1,6 +1,6 @@
 # Tatami
 
-Scala/Java artifact repository.
+Scala/Java artifact repository
 
 ## Maven 2/3
 
