@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>cchantep</groupId>
-  <artifactId>sbt-hl-compiler_2.10_0.13</artifactId>
+  <artifactId>sbt-hl-compiler_2.12_1.0</artifactId>
   <versioning>
     <release>0.6</release>
     <versions>
-      <version>0.1</version>
-      <version>0.2</version>
-      <version>0.3</version>
-      <version>0.4</version>
       <version>0.5</version>
       <version>0.6</version>
     </versions>
