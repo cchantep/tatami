@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.stackstate</groupId>
+  <artifactId>akka-http-pac4j_2.13</artifactId>
+  <versioning>
+    <versions>
+      <version>0.6.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20210312155702</lastUpdated>
+  </versioning>
+</metadata>

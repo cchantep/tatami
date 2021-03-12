@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.stackstate</groupId>
+  <artifactId>akka-http-pac4j_2.12</artifactId>
+  <version>0.6.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20210312.155802</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20210312155802</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.6.2-20210312.155802-1</value>
+        <updated>20210312155802</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.6.2-20210312.155802-1</value>
+        <updated>20210312155802</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>0.6.2-20210312.155802-1</value>
+        <updated>20210312155802</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>0.6.2-20210312.155802-1</value>
+        <updated>20210312155802</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
