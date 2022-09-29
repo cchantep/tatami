@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.mongodb.spark</groupId>
+  <artifactId>mongo-spark-connector</artifactId>
+  <versioning>
+    <versions>
+      <version>10.0.5-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20220929150722</lastUpdated>
+  </versioning>
+</metadata>
