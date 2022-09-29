@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>org.mongodb.spark</groupId>
-  <artifactId>mongo-spark-connector</artifactId>
+  <artifactId>mongo-spark-connector_2.13</artifactId>
   <version>10.0.5-SNAPSHOT</version>
   <versioning>
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
-    <lastUpdated>20220929150722</lastUpdated>
+    <lastUpdated>20220929151351</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
         <value>10.0.5-SNAPSHOT</value>
-        <updated>20220929150722</updated>
+        <updated>20220929151351</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
         <value>10.0.5-SNAPSHOT</value>
-        <updated>20220929150722</updated>
+        <updated>20220929151351</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
         <value>10.0.5-SNAPSHOT</value>
-        <updated>20220929150722</updated>
+        <updated>20220929151351</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>10.0.5-SNAPSHOT</value>
-        <updated>20220929150722</updated>
+        <updated>20220929151351</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

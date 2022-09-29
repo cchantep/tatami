@@ -8,7 +8,7 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mongodb.spark</groupId>
-  <artifactId>mongo-spark-connector</artifactId>
+  <artifactId>mongo-spark-connector_2.13</artifactId>
   <version>10.0.5-SNAPSHOT</version>
   <name>mongo-spark-connector</name>
   <description>The official MongoDB Apache Spark Connect Connector.</description>
