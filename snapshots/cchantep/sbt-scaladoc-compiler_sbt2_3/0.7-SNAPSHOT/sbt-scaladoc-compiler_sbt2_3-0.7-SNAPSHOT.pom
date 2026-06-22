@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cchantep</groupId>
-    <artifactId>sbt-scaladoc-compiler_2.12_1.0</artifactId>
+    <artifactId>sbt-scaladoc-compiler_sbt2_3</artifactId>
     <packaging>jar</packaging>
     <description>sbt-scaladoc-compiler</description>
     <version>0.7-SNAPSHOT</version>
@@ -10,22 +10,17 @@
     <organization>
         <name>cchantep</name>
     </organization>
-    <properties>
-        <scalaVersion>2.12</scalaVersion>
-        <sbtVersion>1.0</sbtVersion>
-    </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
-            <version>2.12.21</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.scala-sbt</groupId>
             <artifactId>sbt</artifactId>
-            <version>1.12.3</version>
+            <version>2.0.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala3-library_3</artifactId>
+            <version>3.8.3</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -34,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>org.specs2</groupId>
-            <artifactId>specs2-core_2.12</artifactId>
+            <artifactId>specs2-core_3</artifactId>
             <version>4.21.0</version>
             <scope>test</scope>
         </dependency>
