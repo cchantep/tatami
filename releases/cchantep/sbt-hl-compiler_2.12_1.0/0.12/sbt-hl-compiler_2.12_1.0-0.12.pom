@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cchantep</groupId>
+    <artifactId>sbt-hl-compiler_2.12_1.0</artifactId>
+    <packaging>jar</packaging>
+    <description>sbt-hl-compiler</description>
+    <version>0.12</version>
+    <name>sbt-hl-compiler</name>
+    <organization>
+        <name>cchantep</name>
+    </organization>
+    <properties>
+        <scalaVersion>2.12</scalaVersion>
+        <sbtVersion>1.0</sbtVersion>
+        <extraDependencyAttributes xml:space="preserve">+organisation:#@#:+com.github.sbt:#@#:+branch:#@#:+@#:NULL:#@:#@#:+e:sbtVersion:#@#:+1.0:#@#:+module:#@#:+sbt2-compat_2.12_1.0:#@#:+revision:#@#:+0.1.0:#@#:+e:scalaVersion:#@#:+2.12:#@#:</extraDependencyAttributes>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.21</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>1.12.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sbt</groupId>
+            <artifactId>sbt2-compat_2.12_1.0</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-core_2.12</artifactId>
+            <version>4.23.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
